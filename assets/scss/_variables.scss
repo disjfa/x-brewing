@@ -1,0 +1,14 @@
+$black: #000;
+$body-bg: lighten($black, 10%);
+$body-color: $gray-400;
+$card-bg: $gray-800;
+$fa-font-path: "~font-awesome/fonts/";
+
+$theme-colors: (
+        "primary": #FAAA53,
+        "black": $black,
+        "dark": lighten($black, 10%),
+        "light": lighten($black, 80%)
+)
+
+

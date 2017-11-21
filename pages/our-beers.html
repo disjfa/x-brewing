@@ -1,0 +1,27 @@
+---
+layout: default
+title: Our beers
+order: 1
+---
+
+<div class="container py-3">
+    <h1>Our beers</h1>
+    <p class="lead">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dignissimos doloremque eligendi, hic ipsa iusto
+        magni natus nihil, quae repellendus voluptas voluptate, voluptatem. Eos harum magni odit quia repudiandae vel!
+    </p>
+    <div class="row">
+        {% for item in site.beers %}
+            <div class="col-lg-4 col-sm-6 py-3 d-flex">
+                <div class="card">
+                    <img src="{{ item.image | prepend: site.baseurl }}" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h2>{{ item.title }}</h2>
+                        <p>{{ item.description }}</p>
+                        <a href="{{ item.url | prepend: site.baseurl }}" class="btn btn-outline-primary">{{ item.title }}</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,7 @@
+.navbar-brand {
+  margin-top: -$navbar-padding-x;
+  margin-bottom: -$navbar-padding-x;
+  img {
+    height: $nav-link-height + $navbar-padding-x;
+  }
+}
