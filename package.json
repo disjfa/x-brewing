@@ -14,9 +14,10 @@
     "brewery"
   ],
   "scripts": {
-    "build": "encore prod",
+    "build": "encore production",
     "dev": "bundle exec jekyll serve & encore dev --watch",
-    "css-lint": "stylelint --syntax scss \"scss/**/*.scss\""
+    "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
+    "deploy": "gh-pages -d _site"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "@symfony/webpack-encore": "^0.17.0",
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.1.0",
     "lodash": "^4.17.4",
     "node-sass": "^4.7.2",
     "popper.js": "^1.12.9",
