@@ -6,6 +6,7 @@ Encore
   .addEntry('app', './assets/js/app.js')
   .enableSassLoader()
   .autoProvidejQuery()
+  .enableVueLoader()
   .enableSourceMaps(!Encore.isProduction())
   .cleanupOutputBeforeBuild()
 ;

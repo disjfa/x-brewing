@@ -17,7 +17,8 @@
     "build": "encore production",
     "dev": "bundle exec jekyll serve & encore dev --watch",
     "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
-    "deploy": "gh-pages -d _site"
+    "deploy": "gh-pages -d _site",
+    "favicon": "gulp favicon"
   },
   "repository": {
     "type": "git",
@@ -32,9 +33,13 @@
   },
   "dependencies": {
     "@symfony/webpack-encore": "^0.17.0",
+    "axios": "^0.17.1",
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0",
     "gh-pages": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-favicons": "^2.2.7",
+    "gulp-util": "^3.0.8",
     "lodash": "^4.17.4",
     "node-sass": "^4.7.2",
     "popper.js": "^1.12.9",
@@ -44,6 +49,9 @@
     "stylelint-config-recommended-scss": "^2.0.0",
     "stylelint-config-standard": "^17.0.0",
     "stylelint-order": "^0.7.0",
-    "stylelint-scss": "^2.1.0"
+    "stylelint-scss": "^2.1.0",
+    "vue": "^2.5.8",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.8"
   }
 }
