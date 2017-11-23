@@ -20,47 +20,47 @@ importScripts('workbox-sw.prod.v2.1.2.js');
 const fileManifest = [
   {
     "url": "about-us.html",
-    "revision": "032d65c4b70d3722be2a99af3d025dcb"
+    "revision": "b1dc52de56df17a2dc5a554674eb785a"
   },
   {
     "url": "beers/bitter-sweet.html",
-    "revision": "9a9e1ea135791175d028eb25de02abd9"
+    "revision": "d1ed3d512e5931215a32ab30ea037ed0"
   },
   {
     "url": "beers/cherry-love.html",
-    "revision": "d52999aa8aac6558b6002a0b199d3caf"
+    "revision": "e3369f7cfb4e3ee07dc6f14941b302d1"
   },
   {
     "url": "beers/choco-on-the-go.html",
-    "revision": "6a8b7052b6b3090c59957e7d7044f76c"
+    "revision": "e234be79e342d5f467a40a6eaaa0fa85"
   },
   {
     "url": "beers/coffee-in-the-morning.html",
-    "revision": "4bbf52333c21fe8f33f542ec0b49beb8"
+    "revision": "ee9613148b107556dbf9690fae72c550"
   },
   {
     "url": "beers/fruity-madness.html",
-    "revision": "02869f7847df26e78ef1fdde62ca2bc1"
+    "revision": "8328a845ea4980c733adab178ea00715"
   },
   {
     "url": "beers/indo-gone-wild.html",
-    "revision": "09d05e0d102c22c6d3fb42de096c7703"
+    "revision": "8e0f99590af25f666189709dd526d8bb"
   },
   {
     "url": "beers/raging-peanut.html",
-    "revision": "45d8b080b74540beea29694c154ecac2"
+    "revision": "821461304af8612808c8d288d49cfa7b"
   },
   {
     "url": "beers/time-to-bbq.html",
-    "revision": "e533d26f167b7799848c432990700c5e"
+    "revision": "4de30159ca4864a021a09056f6269c01"
   },
   {
     "url": "build/app.css",
-    "revision": "c0a96ec32ddb98b7711f07e5f7af8df5"
+    "revision": "8924e64dabdc6db5dd994e512874206e"
   },
   {
     "url": "build/app.js",
-    "revision": "e6e538dbbbd51fed4bb0241fb43f1cec"
+    "revision": "3a39e70d81baa99fa09883b1daff5da6"
   },
   {
     "url": "build/fonts/fontawesome-webfont.af7ae505.woff2",
@@ -300,15 +300,15 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "974ef2636d3ac685a4440e0f7dedde9b"
+    "revision": "c21f56f5e06e459d7914caa33e0d13ca"
   },
   {
     "url": "our-beers.html",
-    "revision": "68fc75d5b82358d35b26466ed2e9ba72"
+    "revision": "751e4db1e6bb67739241286bdcaa72fb"
   },
   {
     "url": "sw.js",
-    "revision": "d1b4fed2698be37bb95376b3454d795e"
+    "revision": "54e0b66f72df56afa9cbcbd32a0be59d"
   },
   {
     "url": "workbox-sw.prod.v2.1.2.js",
