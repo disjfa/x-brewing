@@ -56,11 +56,11 @@ const fileManifest = [
   },
   {
     "url": "build/app.css",
-    "revision": "8924e64dabdc6db5dd994e512874206e"
+    "revision": "40b5ce841036d81d488e2fd10dad6b24"
   },
   {
     "url": "build/app.js",
-    "revision": "3a39e70d81baa99fa09883b1daff5da6"
+    "revision": "a1a07e126df6e9fc401a3aa45a2760e8"
   },
   {
     "url": "build/fonts/fontawesome-webfont.af7ae505.woff2",
@@ -300,15 +300,15 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c21f56f5e06e459d7914caa33e0d13ca"
+    "revision": "a1ed8a3b790181dd17a071974badfafb"
   },
   {
     "url": "our-beers.html",
-    "revision": "751e4db1e6bb67739241286bdcaa72fb"
+    "revision": "10ea8e4a9a0a08abe2f17cf49bfc0fd7"
   },
   {
     "url": "sw.js",
-    "revision": "117cb3b1acd3932f293fcecf5b57db5e"
+    "revision": "82351487c262c2ddc28da8446db5a43d"
   },
   {
     "url": "workbox-sw.prod.v2.1.2.js",
