@@ -22,6 +22,7 @@ exclude:
   - package-lock.json
   - README.md
   - webpack.config.js
+  - gulpfile.js
 
 host: 0.0.0.0
 

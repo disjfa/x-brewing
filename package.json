@@ -14,7 +14,7 @@
     "brewery"
   ],
   "scripts": {
-    "build": "encore production",
+    "build": "encore production && bundle exec jekyll build",
     "dev": "bundle exec jekyll serve & encore dev --watch",
     "css-lint": "stylelint --syntax scss \"scss/**/*.scss\"",
     "deploy": "gh-pages -d _site",
@@ -52,6 +52,7 @@
     "stylelint-scss": "^2.1.0",
     "vue": "^2.5.8",
     "vue-loader": "^13.5.0",
-    "vue-template-compiler": "^2.5.8"
+    "vue-template-compiler": "^2.5.8",
+    "workbox-webpack-plugin": "^2.1.2"
   }
 }

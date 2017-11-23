@@ -6,8 +6,9 @@
   "lang": "en-US",
   "display": "standalone",
   "orientation": "portrait",
-  "start_url": "/x-brewing/?homescreen=1",
+  "start_url": "/x-brewing/index.html?homescreen=1",
   "background_color": "#020307",
+  "theme_color": "#FAAA53",
   "icons": [
     {
       "src": "/x-brewing/icon/android-chrome-36x36.png",
