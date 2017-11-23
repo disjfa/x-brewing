@@ -20,39 +20,39 @@ importScripts('workbox-sw.prod.v2.1.2.js');
 const fileManifest = [
   {
     "url": "about-us.html",
-    "revision": "6297aaface0614d30a6fcc4fdbc79755"
+    "revision": "032d65c4b70d3722be2a99af3d025dcb"
   },
   {
     "url": "beers/bitter-sweet.html",
-    "revision": "d2ea5d543c00618eda6147743de07b07"
+    "revision": "9a9e1ea135791175d028eb25de02abd9"
   },
   {
     "url": "beers/cherry-love.html",
-    "revision": "6682789d5640237bb37400aba15f3bbf"
+    "revision": "d52999aa8aac6558b6002a0b199d3caf"
   },
   {
     "url": "beers/choco-on-the-go.html",
-    "revision": "cdf8dbb43af525425a2fbe135333b2a2"
+    "revision": "6a8b7052b6b3090c59957e7d7044f76c"
   },
   {
     "url": "beers/coffee-in-the-morning.html",
-    "revision": "ac61bb7d192c20e03f575cfc1a5cd879"
+    "revision": "4bbf52333c21fe8f33f542ec0b49beb8"
   },
   {
     "url": "beers/fruity-madness.html",
-    "revision": "0c8dc36ff5a097c700d80fc7d409b6b2"
+    "revision": "02869f7847df26e78ef1fdde62ca2bc1"
   },
   {
     "url": "beers/indo-gone-wild.html",
-    "revision": "41a614815bb69d58dbeefab2d19a3879"
+    "revision": "09d05e0d102c22c6d3fb42de096c7703"
   },
   {
     "url": "beers/raging-peanut.html",
-    "revision": "c311d5f26b66838b22007547b73fa092"
+    "revision": "45d8b080b74540beea29694c154ecac2"
   },
   {
     "url": "beers/time-to-bbq.html",
-    "revision": "38f27168e506bbfa8dbbb7063bb694c1"
+    "revision": "e533d26f167b7799848c432990700c5e"
   },
   {
     "url": "build/app.css",
@@ -61,6 +61,18 @@ const fileManifest = [
   {
     "url": "build/app.js",
     "revision": "e6e538dbbbd51fed4bb0241fb43f1cec"
+  },
+  {
+    "url": "build/fonts/fontawesome-webfont.af7ae505.woff2",
+    "revision": "af7ae505a9eed503f8b8e6982036873e"
+  },
+  {
+    "url": "build/fonts/fontawesome-webfont.b06871f2.ttf",
+    "revision": "b06871f281fee6b241d60582ae9369b9"
+  },
+  {
+    "url": "build/fonts/fontawesome-webfont.fee66e71.woff",
+    "revision": "fee66e712a8a08eef5805a46892932ad"
   },
   {
     "url": "icon/android-chrome-144x144.png",
@@ -288,15 +300,15 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3db2750a370778a0f2daee04d3d75970"
+    "revision": "974ef2636d3ac685a4440e0f7dedde9b"
   },
   {
     "url": "our-beers.html",
-    "revision": "87e115a1d306836de459751fedefd806"
+    "revision": "68fc75d5b82358d35b26466ed2e9ba72"
   },
   {
     "url": "sw.js",
-    "revision": "935240bd2485c8f12ea59e2e99590bcf"
+    "revision": "d1b4fed2698be37bb95376b3454d795e"
   },
   {
     "url": "workbox-sw.prod.v2.1.2.js",
