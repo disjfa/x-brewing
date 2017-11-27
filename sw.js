@@ -56,11 +56,11 @@ const fileManifest = [
   },
   {
     "url": "build/app.css",
-    "revision": "40b5ce841036d81d488e2fd10dad6b24"
+    "revision": "db3dc0ff0d5615007c6ea3cf5b97ad66"
   },
   {
     "url": "build/app.js",
-    "revision": "a1a07e126df6e9fc401a3aa45a2760e8"
+    "revision": "78c2c0c78cf14a9a1fa0be15be1d2dd8"
   },
   {
     "url": "build/fonts/fontawesome-webfont.af7ae505.woff2",
@@ -308,7 +308,7 @@ const fileManifest = [
   },
   {
     "url": "sw.js",
-    "revision": "0649ed36deb872f231d5b8a60e9fecad"
+    "revision": "276e1d24dc393bc836ac6963c2058ea4"
   },
   {
     "url": "workbox-sw.prod.v2.1.2.js",

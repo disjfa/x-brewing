@@ -6,6 +6,13 @@
         <div class="col-md-7 col-12 py-3">
             <h2>{{ page.title }}</h2>
             <p>{{ page.description }}</p>
+            {% if page.untappd %}
+                <a href="{{ page.untappd }}" target="untappd" class="btn btn-outline-primary">
+                    <i class="fa fa-beer"></i>
+                    On untappd
+                </a>
+
+            {% endif %}
         </div>
     </div>
 </div>
