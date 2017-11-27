@@ -24,35 +24,35 @@ const fileManifest = [
   },
   {
     "url": "beers/bitter-sweet.html",
-    "revision": "d1ed3d512e5931215a32ab30ea037ed0"
+    "revision": "9ccb808f63c1fa8aed57e0482f25d509"
   },
   {
     "url": "beers/cherry-love.html",
-    "revision": "e3369f7cfb4e3ee07dc6f14941b302d1"
+    "revision": "49f9171a7dc2476597ac56fd1bec640e"
   },
   {
     "url": "beers/choco-on-the-go.html",
-    "revision": "e234be79e342d5f467a40a6eaaa0fa85"
+    "revision": "538431c07fd8039291fa46e303138c40"
   },
   {
     "url": "beers/coffee-in-the-morning.html",
-    "revision": "ee9613148b107556dbf9690fae72c550"
+    "revision": "12794f42c459bb440505eb7f9b7d5cc5"
   },
   {
     "url": "beers/fruity-madness.html",
-    "revision": "8328a845ea4980c733adab178ea00715"
+    "revision": "c0ee9df3d6393b03dfc34735c619afc1"
   },
   {
     "url": "beers/indo-gone-wild.html",
-    "revision": "8e0f99590af25f666189709dd526d8bb"
+    "revision": "cad5c33c010b21438644bd7de567f3d0"
   },
   {
     "url": "beers/raging-peanut.html",
-    "revision": "821461304af8612808c8d288d49cfa7b"
+    "revision": "5e3f4e1f11e1b0e9cdc616653ffb8083"
   },
   {
     "url": "beers/time-to-bbq.html",
-    "revision": "4de30159ca4864a021a09056f6269c01"
+    "revision": "7e619fa0b25d617ffcc0f839266a5d05"
   },
   {
     "url": "build/app.css",
@@ -308,7 +308,7 @@ const fileManifest = [
   },
   {
     "url": "sw.js",
-    "revision": "18545b6afb08e0b5be68facfb48b283e"
+    "revision": "a8b8bc6611ff9f49bf5cebe7175011b5"
   },
   {
     "url": "workbox-sw.prod.v2.1.2.js",
