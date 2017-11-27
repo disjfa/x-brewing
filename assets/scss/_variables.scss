@@ -10,7 +10,7 @@ $theme-colors: (
         "primary": #FAAA53,
         "black": $black,
         "dark": lighten($black, 10%),
-        "light": lighten($black, 80%)
+        "light": lighten(#FAAA53, 30%)
 )
 
 
