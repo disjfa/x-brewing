@@ -56,7 +56,7 @@ const fileManifest = [
   },
   {
     "url": "build/app.css",
-    "revision": "40b5ce841036d81d488e2fd10dad6b24"
+    "revision": "a197d920f0191f6e2d6061767e942794"
   },
   {
     "url": "build/app.js",
@@ -308,7 +308,7 @@ const fileManifest = [
   },
   {
     "url": "sw.js",
-    "revision": "a8b8bc6611ff9f49bf5cebe7175011b5"
+    "revision": "235fe026a53e9f215eafb2a18adcdde5"
   },
   {
     "url": "workbox-sw.prod.v2.1.2.js",
