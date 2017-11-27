@@ -1,8 +1,8 @@
 {
-  "name": "refero-list",
+  "name": "x-brewing",
   "version": "0.1.0",
   "description": "Homepage",
-  "homepage": "https://github.com/disjfa/refero-list#readme",
+  "homepage": "https://github.com/disjfa/x-brewing#readme",
   "keywords": [
     "css",
     "sass",
@@ -22,14 +22,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/disjfa/refero-list.git"
+    "url": "git+https://github.com/disjfa/x-brewing.git"
   },
-  "style": "css/refero-list.css",
-  "sass": "scss/refero-list.scss",
   "author": "disjfa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/disjfa/refero-list/issues"
+    "url": "https://github.com/disjfa/x-brewing/issues"
   },
   "dependencies": {
     "@symfony/webpack-encore": "^0.17.0",
