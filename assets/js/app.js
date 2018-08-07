@@ -41,7 +41,7 @@ if (window.IntersectionObserver) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/x-brewing/sw.js').then(registration => {
+    navigator.serviceWorker.register('/x-brewing/service-worker.js').then(registration => {
       // console.log('SW registered: ', registration);
     }).catch(registrationError => {
       // console.log('SW registration failed: ', registrationError);

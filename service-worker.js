@@ -1,23 +1,28 @@
-importScripts('workbox-sw.prod.v2.1.2.js');
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
+
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
+
+importScripts(
+  "/x-brewing/build/precache-manifest.5df56f30dcc4b116c0718f92f6ab773c.js"
+);
 
 /**
- * DO NOT EDIT THE FILE MANIFEST ENTRY
- *
- * The method precache() does the following:
- * 1. Cache URLs in the manifest to a local cache.
- * 2. When a network request is made for any of these URLs the response
- *    will ALWAYS comes from the cache, NEVER the network.
- * 3. When the service worker changes ONLY assets with a revision change are
- *    updated, old cache entries are left as is.
- *
- * By changing the file manifest manually, your users may end up not receiving
- * new versions of files because the revision hasn't changed.
- *
- * Please use workbox-build or some other tool / approach to generate the file
- * manifest which accounts for changes to local files and update the revision
- * accordingly.
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
  */
-const fileManifest = [
+self.__precacheManifest = [
   {
     "url": "about-us.html",
     "revision": "316ab2761e2e822fe207cbc3f63cf6d4"
@@ -56,11 +61,11 @@ const fileManifest = [
   },
   {
     "url": "build/app.css",
-    "revision": "3001c7dca3acf07b5d9f2f0fad81ab9f"
+    "revision": "f9e110ac410c65cce5760dfd83fbb72b"
   },
   {
     "url": "build/app.js",
-    "revision": "9f1b7b5cc93bea7d941248ccc019a910"
+    "revision": "1d9c4992c042c28cda25919a9c836e74"
   },
   {
     "url": "build/fonts/fontawesome-webfont.af7ae505.woff2",
@@ -73,6 +78,10 @@ const fileManifest = [
   {
     "url": "build/fonts/fontawesome-webfont.fee66e71.woff",
     "revision": "fee66e712a8a08eef5805a46892932ad"
+  },
+  {
+    "url": "build/precache-manifest.630ac0bd0a129579a9376397d3072c9a.js",
+    "revision": "630ac0bd0a129579a9376397d3072c9a"
   },
   {
     "url": "icon/android-chrome-144x144.png",
@@ -307,17 +316,9 @@ const fileManifest = [
     "revision": "8c43d92f0f44d5e92534945c777b5096"
   },
   {
-    "url": "sw.js",
-    "revision": "fa0e7419499dbc5921d8c1fcdef21a2b"
-  },
-  {
-    "url": "workbox-sw.prod.v2.1.2.js",
-    "revision": "685d1ceb6b9a9f94aacf71d6aeef8b51"
+    "url": "service-worker.js",
+    "revision": "3c87cef15817a623a4356fe9d1f2c323"
   }
-];
-
-const workboxSW = new self.WorkboxSW({
-  "skipWaiting": true,
-  "clientsClaim": true
-});
-workboxSW.precache(fileManifest);
+].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
