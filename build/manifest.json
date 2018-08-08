@@ -1,9 +1,14 @@
 {
-  "x-brewing/build/app.css": "/x-brewing/build/app.css",
   "x-brewing/build/app.js": "/x-brewing/build/app.js",
-  "x-brewing/build/fonts/fontawesome-webfont.eot": "/x-brewing/build/fonts/fontawesome-webfont.674f50d2.eot",
-  "x-brewing/build/fonts/fontawesome-webfont.ttf?v=4.7.0": "/x-brewing/build/fonts/fontawesome-webfont.b06871f2.ttf",
-  "x-brewing/build/fonts/fontawesome-webfont.woff2?v=4.7.0": "/x-brewing/build/fonts/fontawesome-webfont.af7ae505.woff2",
-  "x-brewing/build/fonts/fontawesome-webfont.woff?v=4.7.0": "/x-brewing/build/fonts/fontawesome-webfont.fee66e71.woff",
-  "x-brewing/build/images/fontawesome-webfont.svg?v=4.7.0": "/x-brewing/build/images/fontawesome-webfont.912ec66d.svg"
+  "x-brewing/build/app.css": "/x-brewing/build/app.css",
+  "x-brewing/build/fonts/fa-solid-900.woff": "/x-brewing/build/fonts/fa-solid-900.2d0415fa.woff",
+  "x-brewing/build/fonts/fa-solid-900.woff2": "/x-brewing/build/fonts/fa-solid-900.b75b4bfe.woff2",
+  "x-brewing/build/fonts/fa-solid-900.ttf": "/x-brewing/build/fonts/fa-solid-900.132e9759.ttf",
+  "x-brewing/build/fonts/fa-brands-400.eot": "/x-brewing/build/fonts/fa-brands-400.e8019d50.eot",
+  "x-brewing/build/fonts/fa-brands-400.woff": "/x-brewing/build/fonts/fa-brands-400.da408238.woff",
+  "x-brewing/build/fonts/fa-solid-900.eot": "/x-brewing/build/fonts/fa-solid-900.ea363ed4.eot",
+  "x-brewing/build/images/fa-solid-900.svg": "/x-brewing/build/images/fa-solid-900.de1d242d.svg",
+  "x-brewing/build/fonts/fa-brands-400.ttf": "/x-brewing/build/fonts/fa-brands-400.fdf44bc4.ttf",
+  "x-brewing/build/fonts/fa-brands-400.woff2": "/x-brewing/build/fonts/fa-brands-400.6814d0e8.woff2",
+  "x-brewing/build/images/fa-brands-400.svg": "/x-brewing/build/images/fa-brands-400.83e6c29f.svg"
 }

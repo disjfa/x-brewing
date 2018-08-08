@@ -1,78 +1,99 @@
-importScripts('workbox-sw.prod.v2.1.2.js');
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
+
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
+
+importScripts(
+  "/x-brewing/build/precache-manifest.5ba3414de40a019e0b95c04f0ba912de.js"
+);
 
 /**
- * DO NOT EDIT THE FILE MANIFEST ENTRY
- *
- * The method precache() does the following:
- * 1. Cache URLs in the manifest to a local cache.
- * 2. When a network request is made for any of these URLs the response
- *    will ALWAYS comes from the cache, NEVER the network.
- * 3. When the service worker changes ONLY assets with a revision change are
- *    updated, old cache entries are left as is.
- *
- * By changing the file manifest manually, your users may end up not receiving
- * new versions of files because the revision hasn't changed.
- *
- * Please use workbox-build or some other tool / approach to generate the file
- * manifest which accounts for changes to local files and update the revision
- * accordingly.
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
  */
-const fileManifest = [
+self.__precacheManifest = [
   {
     "url": "about-us.html",
-    "revision": "b1dc52de56df17a2dc5a554674eb785a"
+    "revision": "d94fa2c2ef5bdfc9bcd3562d78f63144"
   },
   {
     "url": "beers/bitter-sweet.html",
-    "revision": "9ccb808f63c1fa8aed57e0482f25d509"
+    "revision": "20d079dd7a713e62005e7307057cfb97"
   },
   {
     "url": "beers/cherry-love.html",
-    "revision": "49f9171a7dc2476597ac56fd1bec640e"
+    "revision": "5656c38f7f2c6c501a6e11982e38dfda"
   },
   {
     "url": "beers/choco-on-the-go.html",
-    "revision": "538431c07fd8039291fa46e303138c40"
+    "revision": "93e249b862b1136188fab1edc70bcb88"
   },
   {
     "url": "beers/coffee-in-the-morning.html",
-    "revision": "12794f42c459bb440505eb7f9b7d5cc5"
+    "revision": "f7facd5146adb1fe550ddbd0be01694a"
   },
   {
     "url": "beers/fruity-madness.html",
-    "revision": "c0ee9df3d6393b03dfc34735c619afc1"
+    "revision": "8e7292fbda2bb583adfd902c4452b62f"
   },
   {
     "url": "beers/indo-gone-wild.html",
-    "revision": "cad5c33c010b21438644bd7de567f3d0"
+    "revision": "a9340a08f92309729fdc835bd0fb14aa"
   },
   {
     "url": "beers/raging-peanut.html",
-    "revision": "5e3f4e1f11e1b0e9cdc616653ffb8083"
+    "revision": "2bfdd114a96c78a596d6ed58d4628b05"
   },
   {
     "url": "beers/time-to-bbq.html",
-    "revision": "7e619fa0b25d617ffcc0f839266a5d05"
+    "revision": "17c1072d34d0b5db6163ee9f517d5498"
   },
   {
     "url": "build/app.css",
-    "revision": "a197d920f0191f6e2d6061767e942794"
+    "revision": "d149d03b48bdfe30650a8310d88a5b5a"
   },
   {
     "url": "build/app.js",
-    "revision": "a1a07e126df6e9fc401a3aa45a2760e8"
+    "revision": "96936b757a1b14989948105ebea883e1"
   },
   {
-    "url": "build/fonts/fontawesome-webfont.af7ae505.woff2",
-    "revision": "af7ae505a9eed503f8b8e6982036873e"
+    "url": "build/fonts/fa-brands-400.6814d0e8.woff2",
+    "revision": "6814d0e8136d34e313623eb7129d538e"
   },
   {
-    "url": "build/fonts/fontawesome-webfont.b06871f2.ttf",
-    "revision": "b06871f281fee6b241d60582ae9369b9"
+    "url": "build/fonts/fa-brands-400.da408238.woff",
+    "revision": "da408238128b876cbda6424391f1566f"
   },
   {
-    "url": "build/fonts/fontawesome-webfont.fee66e71.woff",
-    "revision": "fee66e712a8a08eef5805a46892932ad"
+    "url": "build/fonts/fa-brands-400.fdf44bc4.ttf",
+    "revision": "fdf44bc43e8fa2358bbb7d9165d78455"
+  },
+  {
+    "url": "build/fonts/fa-solid-900.132e9759.ttf",
+    "revision": "132e9759d93e4eefd7cdde0d7a322991"
+  },
+  {
+    "url": "build/fonts/fa-solid-900.2d0415fa.woff",
+    "revision": "2d0415fa29ea596b7a02c78eddeede20"
+  },
+  {
+    "url": "build/fonts/fa-solid-900.b75b4bfe.woff2",
+    "revision": "b75b4bfe0d58faeced5006c785eaae23"
+  },
+  {
+    "url": "build/precache-manifest.7e5a90a89d358bd2e11502e0b50dba2c.js",
+    "revision": "7e5a90a89d358bd2e11502e0b50dba2c"
   },
   {
     "url": "icon/android-chrome-144x144.png",
@@ -300,24 +321,16 @@ const fileManifest = [
   },
   {
     "url": "index.html",
-    "revision": "a1ed8a3b790181dd17a071974badfafb"
+    "revision": "4b8ad5e59c8221e5017adfc0c619767e"
   },
   {
     "url": "our-beers.html",
-    "revision": "10ea8e4a9a0a08abe2f17cf49bfc0fd7"
+    "revision": "71d05c6586c7a8b6d1ba00c27c0a9ff5"
   },
   {
-    "url": "sw.js",
-    "revision": "235fe026a53e9f215eafb2a18adcdde5"
-  },
-  {
-    "url": "workbox-sw.prod.v2.1.2.js",
-    "revision": "685d1ceb6b9a9f94aacf71d6aeef8b51"
+    "url": "service-worker.js",
+    "revision": "a4c7840fc2745020e731d911fd43ef0c"
   }
-];
-
-const workboxSW = new self.WorkboxSW({
-  "skipWaiting": true,
-  "clientsClaim": true
-});
-workboxSW.precache(fileManifest);
+].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
