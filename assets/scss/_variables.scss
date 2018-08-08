@@ -2,7 +2,7 @@ $black: #000;
 $body-bg: lighten($black, 10%);
 $body-color: $gray-200;
 $card-bg: lighten($black, 8%);
-$fa-font-path: "~font-awesome/fonts/";
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
 $font-size-base: 1.2rem;
 $lead-font-size: ($font-size-base * 1.25);
 
@@ -11,6 +11,4 @@ $theme-colors: (
         "black": $black,
         "dark": lighten($black, 10%),
         "light": lighten(#FAAA53, 30%)
-)
-
-
+);

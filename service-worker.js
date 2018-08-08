@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 importScripts(
-  "/x-brewing/build/precache-manifest.5df56f30dcc4b116c0718f92f6ab773c.js"
+  "/x-brewing/build/precache-manifest.5ba3414de40a019e0b95c04f0ba912de.js"
 );
 
 /**
@@ -25,63 +25,75 @@ importScripts(
 self.__precacheManifest = [
   {
     "url": "about-us.html",
-    "revision": "316ab2761e2e822fe207cbc3f63cf6d4"
+    "revision": "d94fa2c2ef5bdfc9bcd3562d78f63144"
   },
   {
     "url": "beers/bitter-sweet.html",
-    "revision": "77810b3f8900c1ec5fa5a11db34cd066"
+    "revision": "20d079dd7a713e62005e7307057cfb97"
   },
   {
     "url": "beers/cherry-love.html",
-    "revision": "8b37588059456f5d2daa5988e68a293e"
+    "revision": "5656c38f7f2c6c501a6e11982e38dfda"
   },
   {
     "url": "beers/choco-on-the-go.html",
-    "revision": "de8a03794cbf0d44d633140669d227e7"
+    "revision": "93e249b862b1136188fab1edc70bcb88"
   },
   {
     "url": "beers/coffee-in-the-morning.html",
-    "revision": "5021025c0f9308798222e48cb7880839"
+    "revision": "f7facd5146adb1fe550ddbd0be01694a"
   },
   {
     "url": "beers/fruity-madness.html",
-    "revision": "6654634ef1fdaede62b8a06cad2470d1"
+    "revision": "8e7292fbda2bb583adfd902c4452b62f"
   },
   {
     "url": "beers/indo-gone-wild.html",
-    "revision": "fd51413589bbf4b15f4af9a322d2a1ad"
+    "revision": "a9340a08f92309729fdc835bd0fb14aa"
   },
   {
     "url": "beers/raging-peanut.html",
-    "revision": "a4cafb043bf3ba48267a1ce320853f6c"
+    "revision": "2bfdd114a96c78a596d6ed58d4628b05"
   },
   {
     "url": "beers/time-to-bbq.html",
-    "revision": "c7269b7c2dfab145034a9cb4fd02fda0"
+    "revision": "17c1072d34d0b5db6163ee9f517d5498"
   },
   {
     "url": "build/app.css",
-    "revision": "f9e110ac410c65cce5760dfd83fbb72b"
+    "revision": "d149d03b48bdfe30650a8310d88a5b5a"
   },
   {
     "url": "build/app.js",
-    "revision": "1d9c4992c042c28cda25919a9c836e74"
+    "revision": "96936b757a1b14989948105ebea883e1"
   },
   {
-    "url": "build/fonts/fontawesome-webfont.af7ae505.woff2",
-    "revision": "af7ae505a9eed503f8b8e6982036873e"
+    "url": "build/fonts/fa-brands-400.6814d0e8.woff2",
+    "revision": "6814d0e8136d34e313623eb7129d538e"
   },
   {
-    "url": "build/fonts/fontawesome-webfont.b06871f2.ttf",
-    "revision": "b06871f281fee6b241d60582ae9369b9"
+    "url": "build/fonts/fa-brands-400.da408238.woff",
+    "revision": "da408238128b876cbda6424391f1566f"
   },
   {
-    "url": "build/fonts/fontawesome-webfont.fee66e71.woff",
-    "revision": "fee66e712a8a08eef5805a46892932ad"
+    "url": "build/fonts/fa-brands-400.fdf44bc4.ttf",
+    "revision": "fdf44bc43e8fa2358bbb7d9165d78455"
   },
   {
-    "url": "build/precache-manifest.630ac0bd0a129579a9376397d3072c9a.js",
-    "revision": "630ac0bd0a129579a9376397d3072c9a"
+    "url": "build/fonts/fa-solid-900.132e9759.ttf",
+    "revision": "132e9759d93e4eefd7cdde0d7a322991"
+  },
+  {
+    "url": "build/fonts/fa-solid-900.2d0415fa.woff",
+    "revision": "2d0415fa29ea596b7a02c78eddeede20"
+  },
+  {
+    "url": "build/fonts/fa-solid-900.b75b4bfe.woff2",
+    "revision": "b75b4bfe0d58faeced5006c785eaae23"
+  },
+  {
+    "url": "build/precache-manifest.7e5a90a89d358bd2e11502e0b50dba2c.js",
+    "revision": "7e5a90a89d358bd2e11502e0b50dba2c"
   },
   {
     "url": "icon/android-chrome-144x144.png",
@@ -309,15 +321,15 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "c9c5c2e6f69368c5e1f1c8b4e35679a0"
+    "revision": "4b8ad5e59c8221e5017adfc0c619767e"
   },
   {
     "url": "our-beers.html",
-    "revision": "8c43d92f0f44d5e92534945c777b5096"
+    "revision": "71d05c6586c7a8b6d1ba00c27c0a9ff5"
   },
   {
     "url": "service-worker.js",
-    "revision": "3c87cef15817a623a4356fe9d1f2c323"
+    "revision": "a4c7840fc2745020e731d911fd43ef0c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
