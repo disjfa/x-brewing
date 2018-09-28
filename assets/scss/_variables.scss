@@ -1,14 +1,11 @@
-$black: #000;
-$body-bg: lighten($black, 10%);
-$body-color: $gray-200;
-$card-bg: lighten($black, 8%);
+//$body-bg: #181717;
+//$body-color: $gray-200;
+//$card-bg: lighten($black, 8%);
+$dark: #000000;
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
 $font-size-base: 1.2rem;
 $lead-font-size: ($font-size-base * 1.25);
 
 $theme-colors: (
-        "primary": #FAAA53,
-        "black": $black,
-        "dark": lighten($black, 10%),
-        "light": lighten(#FAAA53, 30%)
+        'primary': #faaa53,
 );

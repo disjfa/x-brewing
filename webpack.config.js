@@ -2,19 +2,24 @@ const Encore = require('@symfony/webpack-encore');
 const { GenerateSW } = require('workbox-webpack-plugin');
 
 Encore
-  .setOutputPath('build/')
-  .setPublicPath('/x-brewing/build')
+  .setOutputPath('site/build/')
+  .setPublicPath('/build')
   .addEntry('app', './assets/js/app.js')
+  .addEntry('theme', './assets/js/theme.js')
+  .setManifestKeyPrefix('build/')
   .enableSassLoader()
   .autoProvidejQuery()
-  .enableVueLoader()
   .enableSourceMaps(!Encore.isProduction())
   .addPlugin(new GenerateSW({
     globDirectory: './_site',
-    globPatterns: ['**/*.{html,js,css,jpg,png,woff2,woff,ttf}'],
+    globPatterns: ['site/**/*.{html,js,css,jpg,png,woff2,woff,ttf}'],
     swDest: './../service-worker.js',
   }))
-  .cleanupOutputBeforeBuild()
 ;
+
+if (Encore.isProduction()) {
+  Encore
+    .cleanupOutputBeforeBuild()
+}
 
 module.exports = Encore.getWebpackConfig();

@@ -2,7 +2,7 @@ title: X-brewing
 email: disjfa@disjfa.nl
 description: >
   X-brewing
-baseurl: "/x-brewing"
+baseurl: ""
 url: "https://disjfa.github.io"
 
 # Google
@@ -10,24 +10,14 @@ google_analytics: UA-83598448-1
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - assets
-  - LICENSE
-  - package.json
-  - package-lock.json
-  - README.md
-  - webpack.config.js
-  - gulpfile.js
 
+source: site
 host: 0.0.0.0
 
 collections:
   beers:
-    output: true
+    output: false
 
 facebook_url: https://www.facebook.com/X-brewing-169771763610772/
