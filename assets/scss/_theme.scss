@@ -1,53 +1,62 @@
-.theme-dark,
-.theme-light {
-  transition: background-color .6s, color .6s;
-  .bg-dark,
-  .bg-light {
-    transition: background-color .6s;
-  }
-  .text-dark,
-  .text-light {
-    transition: color .6s;
-  }
-}
+$theme-transition: 0.6s;
+$theme-list: () !default;
+$theme-list: map-merge(
+    (
+      'dark': (
+        'bg-color': #181717,
+        'dark': #f8f9fa,
+        'light': #000,
+        'text-color': $gray-200,
+      ),
+      'light': (
+        'bg-color': #fff,
+        'dark': #000,
+        'light': #f8f9fa,
+        'text-color': $gray-800,
+      )
+    ),
+    $theme-list
+);
 
-.theme-dark {
-  background: #181717;
-  color: $gray-200;
-  .theme-dark-only {
-    display: block !important;
-  }
-  .bg-dark {
-    background-color: #000000 !important;
-  }
-  .bg-light {
-    background-color: #f8f9fa !important;
-  }
-  .text-dark {
-    color: #000000 !important;
-  }
-  .text-light {
-    color: #f8f9fa !important;
-  }
-}
+@each $theme-name, $theme-map in $theme-list {
+  .theme-#{$theme-name} {
+    transition: background-color $theme-transition, color $theme-transition;
+    background: map-get($theme-map, 'bg-color');
+    color: map-get($theme-map, 'text-color');
 
-.theme-light {
-  background: #fff;
-  color: $gray-800;
-  .theme-light-only {
-    display: block !important;
-  }
-  .bg-dark {
-    background-color: #f8f9fa !important;
-  }
-  .bg-light {
-    background-color: #000000 !important;
-  }
-  .text-dark {
-    color: #f8f9fa !important;
-  }
-  .text-light {
-    color: #000000 !important;
+    .bg-light,
+    .bg-dark {
+      transition: background-color $theme-transition;
+    }
+
+    .text-light,
+    .text-dark {
+      transition: background-color $theme-transition;
+    }
+
+    .theme-#{$theme-name}-only {
+      display: block !important;
+    }
+
+    .bg-dark {
+      background-color: map-get($theme-map, 'dark') !important;
+    }
+
+    .bg-light {
+      background-color: map-get($theme-map, 'light') !important;
+    }
+
+    .text-dark {
+      color: map-get($theme-map, 'dark') !important;
+    }
+
+    .text-light {
+      color: map-get($theme-map, 'light') !important;
+    }
+
+    .card {
+      background-color: map-get($theme-map, 'light');
+    }
   }
 }
 
