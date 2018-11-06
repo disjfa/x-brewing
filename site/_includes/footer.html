@@ -9,7 +9,13 @@
             </div>
             <div class="col-md-3">
                 <h3>Our beers</h3>
-                <p>Soon...</p>
+                <ul>
+                    {% for item in site.beers %}
+                        <li>
+                            <a href="{{ item.url | prepend: site.baseurl }}" class="d-block py-1">{{ item.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
             <div class="col-md-3">
                 <h3>Social</h3>

@@ -1,10 +1,13 @@
-<div class="container">
+<div class="container py-3">
+    <h1>{{ page.title }}</h1>
     <div class="row">
         <div class="col-md-5 col-12 py-3">
             <img src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}" class="img-fluid rounded">
         </div>
         <div class="col-md-7 col-12 py-3">
-            <h2>{{ page.title }}</h2>
+
+            <p>{{ page.intro }}</p>
+            <h3>{{ page.lead }}</h3>
             <p>{{ page.description }}</p>
             {% if page.untappd %}
                 <a href="{{ page.untappd }}" target="untappd" class="btn btn-outline-primary">

@@ -7,12 +7,16 @@ $theme-list: map-merge(
         'dark': #f8f9fa,
         'light': #000,
         'text-color': $gray-200,
+        'hover-color': $gray-400,
+        'toggler-icon': $navbar-dark-toggler-icon-bg,
       ),
       'light': (
         'bg-color': #fff,
         'dark': #000,
         'light': #f8f9fa,
         'text-color': $gray-800,
+        'hover-color': $gray-600,
+        'toggler-icon': $navbar-light-toggler-icon-bg,
       )
     ),
     $theme-list
@@ -23,6 +27,33 @@ $theme-list: map-merge(
     transition: background-color $theme-transition, color $theme-transition;
     background: map-get($theme-map, 'bg-color');
     color: map-get($theme-map, 'text-color');
+
+    .navbar-light {
+      .navbar-toggler {
+        border-color: map-get($theme-map, 'hover-color');
+        .navbar-toggler-icon {
+          background-image: map-get($theme-map, 'toggler-icon');
+        }
+      }
+      .navbar-brand {
+        color: map-get($theme-map, 'text-color');
+      }
+      .navbar-nav {
+        .nav-link {
+          color: map-get($theme-map, 'text-color');
+          &:hover,
+          &:active {
+            color: map-get($theme-map, 'hover-color');
+          }
+        }
+
+        .active {
+          .nav-link {
+            color: map-get($theme-map, 'hover-color');
+          }
+        }
+      }
+    }
 
     .bg-light,
     .bg-dark {
