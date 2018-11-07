@@ -10,7 +10,7 @@
             <h3>{{ page.lead }}</h3>
             <p>{{ page.description }}</p>
             {% if page.untappd %}
-                <a href="{{ page.untappd }}" target="untappd" class="btn btn-outline-primary">
+                <a href="{{ page.untappd }}" target="untappd" class="btn btn-outline-{{ page.color | default 'primary' }}">
                     <i class="fab fa-untappd"></i>
                     On untappd
                 </a>
