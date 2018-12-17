@@ -1,15 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">
-            <img src="{{ "/img/logo-white.png" | prepend: site.baseurl }}" alt="X brewing logo" class="img-fluid d-none theme-dark-only">
-            <img src="{{ "/img/logo-black.png" | prepend: site.baseurl }}" alt="X brewing logo" class="img-fluid d-none theme-light-only">
+            <img src="{{ "/img/logo-white.png" | prepend: site.baseurl }}" alt="X brewing logo" class="img-fluid">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="main-navbar">
             <div class="navbar-nav mr-auto">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-center">
                     {% for item in site.beers %}
                         <li class="nav-item{% if item.url == page.url %} active{% endif %}">
                             <a href="{{ item.url | prepend: site.baseurl }}" class="nav-link">{{ item.title }}</a>
@@ -18,20 +17,25 @@
                 </ul>
             </div>
 
-            <div class="navbar-nav">
+            <div class="d-flex flex-row justify-content-center">
                 {% if site.facebook_url %}
-                    <a href="{{ site.facebook_url }}" class="p-2 text-dark">
-                        <i class="fab fa-facebook"></i>
+                    <a href="{{ site.facebook_url }}" class="btn text-white">
+                        <i class="fab fa-fw fa-facebook"></i>
+                    </a>
+                {% endif %}
+                {% if site.untapped_url %}
+                    <a href="{{ site.untapped_url }}" class="btn text-white">
+                        <i class="fab fa-fw fa-untappd"></i>
                     </a>
                 {% endif %}
                 {% if site.twitter_url %}
-                    <a href="{{ site.twitter_url }}" class="p-2 text-dark">
-                        <i class="fab fa-twitter"></i>
+                    <a href="{{ site.twitter_url }}" class="btn text-white">
+                        <i class="fab fa-fw fa-twitter"></i>
                     </a>
                 {% endif %}
                 {% if site.github_url %}
-                    <a href="{{ site.github_url }}" class="p-2 text-dark">
-                        <i class="fab fa-github"></i>
+                    <a href="{{ site.github_url }}" class="btn text-white">
+                        <i class="fab fa-fw fa-github"></i>
                     </a>
                 {% endif %}
             </div>

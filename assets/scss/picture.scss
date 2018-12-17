@@ -1,26 +1,64 @@
 .picture {
   position: relative;
 
-  &:hover {
-    .picture-body {
-      opacity: 1;
-    }
-  }
-  &-body {
-    align-items: center;
-    background-color: rgba(0, 0, 0, .6);
+  &-inner {
     bottom: 0;
     color: #f7f7f7;
-    display: flex;
-    justify-content: center;
     left: 0;
-    margin-left: $grid-gutter-width/2;
-    margin-right: $grid-gutter-width/2;
-    opacity: 0;
-    padding: 10px;
     position: absolute;
-    right: 0;
-    top: 0;
-    transition: opacity 0.3s;
+  }
+
+  &-title {
+    color: $dark;
+    font-size: 1rem;
+    padding: 0;
+    text-orientation: sideways;
+    writing-mode: vertical-lr;
+  }
+
+  &-body {
+    display: none;
+  }
+
+  @media (min-width: 400px) {
+    &-title {
+      font-size: 1.2rem;
+      padding: 0 0 1rem 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &-inner {
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      margin-left: $grid-gutter-width/2;
+      margin-right: $grid-gutter-width/2;
+      opacity: 0;
+      padding: 10px;
+      right: 0;
+      top: 0;
+      transition: opacity .3s;
+    }
+
+    &-body {
+      display: block;
+    }
+
+    &-title {
+      color: $white;
+      font-size: 2rem;
+      padding: $spacer;
+      text-orientation: initial;
+      writing-mode: initial;
+    }
+
+    &:hover {
+      .picture-inner {
+        opacity: 1;
+      }
+    }
   }
 }

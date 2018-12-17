@@ -1,43 +1,55 @@
-<div class="bg-dark">
-    <footer class="container py-3 text-light">
-        <div class="row">
-            <div class="col-md-6">
-                <h3>X-brewing</h3>
-                <p>
-                    Beers with an X
-                </p>
-            </div>
-            <div class="col-md-3">
-                <h3>Our beers</h3>
-                <ul>
-                    {% for item in site.beers %}
-                        <li>
-                            <a href="{{ item.url | prepend: site.baseurl }}" class="d-block py-1">{{ item.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h3>Social</h3>
-                {% if site.facebook_url %}
-                    <a href="{{ site.facebook_url }}" class="p-2 text-light d-block">
-                        <i class="fab fa-facebook"></i> facebook
-                    </a>
-                {% endif %}
-                {% if site.twitter_url %}
-                    <a href="{{ site.twitter_url }}" class="p-2 text-light d-block">
-                        <i class="fab fa-twitter"></i> twitter
-                    </a>
-                {% endif %}
-                {% if site.github_url %}
-                    <a href="{{ site.github_url }}" class="p-2 text-light d-block">
-                        <i class="fab fa-github"></i> github
-                    </a>
-                {% endif %}
-            </div>
+<hr>
+<footer class="container py-3 text-light">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>X-brewing</h3>
+            <p>
+                Beers with an X
+            </p>
         </div>
-    </footer>
-</div>
+        <div class="col-md-3">
+            <h3>Our beers</h3>
+            <ul>
+                {% for item in site.beers %}
+                    <li>
+                        <a href="{{ item.url | prepend: site.baseurl }}" class="d-block py-1">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>Social</h3>
+            {% if site.facebook_url %}
+                <div>
+                    <a href="{{ site.facebook_url }}" class="text-light btn">
+                        <i class="fab fa-fw fa-facebook"></i> facebook
+                    </a>
+                </div>
+            {% endif %}
+            {% if site.untapped_url %}
+                <div>
+                    <a href="{{ site.untapped_url }}" class="text-light btn">
+                        <i class="fab fa-fw fa-untappd"></i> untapped
+                    </a>
+                </div>
+            {% endif %}
+            {% if site.twitter_url %}
+                <div>
+                    <a href="{{ site.twitter_url }}" class="text-light btn">
+                        <i class="fab fa-fw fa-twitter"></i> twitter
+                    </a>
+                </div>
+            {% endif %}
+            {% if site.github_url %}
+                <div>
+                    <a href="{{ site.github_url }}" class="text-light btn">
+                        <i class="fab fa-fw fa-github"></i> github
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</footer>
 
 <div id="fb-root"></div>
 <script>(function (d, s, id) {
@@ -67,14 +79,5 @@
     </script>
 {% endif %}
 
-<div class="switch-theme">
-    <a href="#" class="js-switch-theme d-none theme-dark-only switch-theme-icon" data-theme="light">
-        {% include sun.svg %}
-    </a>
-    <a href="#" class="js-switch-theme d-none theme-light-only switch-theme-icon" data-theme="dark">
-        {% include moon.svg %}
-    </a>
-</div>
-
-<script src="{{ "/build/theme.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/build/runtime.js" | prepend: site.baseurl }}" async></script>
 <script src="{{ "/build/app.js" | prepend: site.baseurl }}" async></script>

@@ -5,10 +5,10 @@ Encore
   .setOutputPath('site/build/')
   .setPublicPath('/build')
   .addEntry('app', './assets/js/app.js')
-  .addEntry('theme', './assets/js/theme.js')
   .setManifestKeyPrefix('build/')
   .enableSassLoader()
   .autoProvidejQuery()
+  .enableSingleRuntimeChunk()
   .enableSourceMaps(!Encore.isProduction())
   .addPlugin(new GenerateSW({
     globDirectory: './_site',
@@ -20,6 +20,8 @@ Encore
 if (Encore.isProduction()) {
   Encore
     .cleanupOutputBeforeBuild()
+    .enablePostCssLoader()
+  ;
 }
 
 module.exports = Encore.getWebpackConfig();
