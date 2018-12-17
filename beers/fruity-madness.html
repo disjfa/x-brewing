@@ -49,16 +49,15 @@
 </head>
 <body class="theme-dark">
 <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="/">
-            <img src="/img/logo-white.png" alt="X brewing logo" class="img-fluid d-none theme-dark-only">
-            <img src="/img/logo-black.png" alt="X brewing logo" class="img-fluid d-none theme-light-only">
+            <img src="/img/logo-white.png" alt="X brewing logo" class="img-fluid">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="main-navbar">
             <div class="navbar-nav mr-auto">
                 <ul class="navbar-nav">
                     
@@ -102,7 +101,7 @@
             <h3>Bam! the fruit explodes right in your face with this beer.</h3>
             <p>Be warned; it will make you think your on a tropical island filled with mango trees. Fresh and fruity beer, onlymade for those who love fruit.</p>
             
-                <a href="https://untappd.com/b/x-brewing-fruity-madness/2393487" target="untappd" class="btn btn-outline-primary">
+                <a href="https://untappd.com/b/x-brewing-fruity-madness/2393487" target="untappd" class="btn btn-outline-fruity-madness">
                     <i class="fab fa-untappd"></i>
                     On untappd
                 </a>
@@ -116,46 +115,54 @@
 </div>
 
 </div>
-<div class="bg-dark">
-    <footer class="container py-3 text-light">
-        <div class="row">
-            <div class="col-md-6">
-                <h3>X-brewing</h3>
-                <p>
-                    Beers with an X
-                </p>
-            </div>
-            <div class="col-md-3">
-                <h3>Our beers</h3>
-                <ul>
-                    
-                        <li>
-                            <a href="/beers/coffee-in-the-morning.html" class="d-block py-1">Coffee In The Morning</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/beers/fruity-madness.html" class="d-block py-1">Fruity Madness</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/beers/two-big-friends.html" class="d-block py-1">Two big friends</a>
-                        </li>
-                    
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h3>Social</h3>
+<hr>
+<footer class="container py-3 text-light">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>X-brewing</h3>
+            <p>
+                Beers with an X
+            </p>
+        </div>
+        <div class="col-md-3">
+            <h3>Our beers</h3>
+            <ul>
                 
-                    <a href="https://www.facebook.com/X-brewing-169771763610772/" class="p-2 text-light d-block">
+                    <li>
+                        <a href="/beers/coffee-in-the-morning.html" class="d-block py-1">Coffee In The Morning</a>
+                    </li>
+                
+                    <li>
+                        <a href="/beers/fruity-madness.html" class="d-block py-1">Fruity Madness</a>
+                    </li>
+                
+                    <li>
+                        <a href="/beers/two-big-friends.html" class="d-block py-1">Two big friends</a>
+                    </li>
+                
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>Social</h3>
+            
+                <div>
+                    <a href="https://www.facebook.com/X-brewing-169771763610772/" class="text-light btn">
                         <i class="fab fa-facebook"></i> facebook
                     </a>
-                
-                
-                
-            </div>
+                </div>
+            
+            
+                <div>
+                    <a href="https://www.facebook.com/X-brewing-169771763610772/" class="text-light btn">
+                        <i class="fab fa-untappd"></i> untapped
+                    </a>
+                </div>
+            
+            
+            
         </div>
-    </footer>
-</div>
+    </div>
+</footer>
 
 <div id="fb-root"></div>
 <script>(function (d, s, id) {
