@@ -1,14 +1,17 @@
 {
-  "build/app.js": "/build/app.js",
   "build/app.css": "/build/app.css",
-  "build/fonts/fa-solid-900.woff": "/build/fonts/fa-solid-900.815694de.woff",
-  "build/fonts/fa-solid-900.woff2": "/build/fonts/fa-solid-900.14a08198.woff2",
-  "build/fonts/fa-solid-900.ttf": "/build/fonts/fa-solid-900.0079a0ab.ttf",
-  "build/fonts/fa-brands-400.eot": "/build/fonts/fa-brands-400.9b6c8da3.eot",
-  "build/fonts/fa-brands-400.woff": "/build/fonts/fa-brands-400.7b464e27.woff",
-  "build/fonts/fa-solid-900.eot": "/build/fonts/fa-solid-900.70e65a7d.eot",
-  "build/images/fa-solid-900.svg": "/build/images/fa-solid-900.38508b2e.svg",
-  "build/fonts/fa-brands-400.ttf": "/build/fonts/fa-brands-400.947b9537.ttf",
-  "build/fonts/fa-brands-400.woff2": "/build/fonts/fa-brands-400.48461ea4.woff2",
-  "build/images/fa-brands-400.svg": "/build/images/fa-brands-400.b5472631.svg"
+  "build/app.js": "/build/app.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/./../service-worker.js": "/build/./../service-worker.js",
+  "build/fonts/fa-brands-400.ttf": "/build/fonts/fa-brands-400.418d54a4.ttf",
+  "build/fonts/fa-brands-400.woff": "/build/fonts/fa-brands-400.5e405c16.woff",
+  "build/fonts/fa-brands-400.eot": "/build/fonts/fa-brands-400.877baf62.eot",
+  "build/fonts/fa-brands-400.woff2": "/build/fonts/fa-brands-400.f80b8a05.woff2",
+  "build/fonts/fa-solid-900.woff2": "/build/fonts/fa-solid-900.59ea9019.woff2",
+  "build/fonts/fa-solid-900.woff": "/build/fonts/fa-solid-900.686e245a.woff",
+  "build/fonts/fa-solid-900.ttf": "/build/fonts/fa-solid-900.b9c86e3a.ttf",
+  "build/fonts/fa-solid-900.eot": "/build/fonts/fa-solid-900.f9103ae5.eot",
+  "build/images/fa-brands-400.svg": "/build/images/fa-brands-400.3e30e90a.svg",
+  "build/images/fa-solid-900.svg": "/build/images/fa-solid-900.1eba168c.svg",
+  "build/precache-manifest.f81229919285e2ca564171c142cd0932.js": "/build/precache-manifest.f81229919285e2ca564171c142cd0932.js"
 }
