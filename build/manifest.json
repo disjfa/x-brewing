@@ -1,7 +1,6 @@
 {
   "build/app.js": "/build/app.js",
   "build/app.css": "/build/app.css",
-  "build/theme.js": "/build/theme.js",
   "build/fonts/fa-solid-900.woff": "/build/fonts/fa-solid-900.815694de.woff",
   "build/fonts/fa-solid-900.woff2": "/build/fonts/fa-solid-900.14a08198.woff2",
   "build/fonts/fa-solid-900.ttf": "/build/fonts/fa-solid-900.0079a0ab.ttf",
