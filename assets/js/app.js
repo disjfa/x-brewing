@@ -2,6 +2,7 @@ require('./../scss/app.scss');
 
 window.Popper = require('popper.js');
 require('bootstrap');
+require('./components/map');
 
 function callback(entries) {
   entries.forEach(function (entry) {
@@ -30,7 +31,7 @@ if (window.IntersectionObserver) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/x-brewing/service-worker.js').then(registration => {
+    navigator.serviceWorker.register('/service-worker.js').then(registration => {
       // console.log('SW registered: ', registration);
     }).catch(registrationError => {
       // console.log('SW registration failed: ', registrationError);

@@ -4,12 +4,10 @@ title: X brewing
 order: 0
 ---
 
-<div class="container py-3 d-none theme-light-only bounce">
-    <img src="{{ "/img/logo-black.png" | prepend: site.baseurl }}" alt="X brewing logo" class="img-fluid pulse">
-</div>
-<div class="container py-3 d-none theme-dark-only bounce">
+<div class="container py-3 bounce">
     <img src="{{ "/img/logo-white.png" | prepend: site.baseurl }}" alt="X brewing logo" class="img-fluid pulse">
 </div>
+
 <div class="container py-3 text-center">
     <div class="row">
         {% for item in site.beers %}
@@ -33,4 +31,20 @@ order: 0
             </a>
         </blockquote>
     </div>
+</div>
+
+<div class="container">
+    <h3>Onder andere hier verkrijgbaar</h3>
+</div>
+<div class="map" id="map"></div>
+<div class="d-none">
+    {% for location in site.locations %}
+        <div class="map-item" data-lat="{{ location.lat }}" data-lng="{{ location.lng }}">
+            <h6>{{ location.title }}</h6>
+            <div>{{ location.intro }}</div>
+            {% if location.href %}
+                <a href="{{ location.href }}" target="_blank">Bekijk locatie</a>
+            {% endif %}
+        </div>
+    {% endfor %}
 </div>
