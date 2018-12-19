@@ -95,20 +95,17 @@
     </div>
 </nav>
 
-    <div class="container py-3">
+    <div class="container py-5">
     <h1>About X brewing</h1>
 
-    <p class="lead">
+    <p>
         We like beer Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur cum cupiditate dignissimos
         doloremque, minima mollitia nulla, quaerat quo, repudiandae saepe vero? Aspernatur, beatae cupiditate deleniti
         dolores numquam possimus ut?
     </p>
-    <img src="/img/wil-stewart-24562.jpg" alt="" class="img-fluid rounded">
-    <em>Photo by
-        <a href="https://unsplash.com/photos/UErWoQEoMrc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Wil
-            Stewart</a> on
-        <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em>
-    <p class="py-3">
+    <hr>
+    <h1>Over X brewing</h1>
+    <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate debitis dolore est facere ipsam
         itaque laborum minus nesciunt nostrum obcaecati omnis optio possimus, quia reprehenderit unde, ut? Et,
         laboriosam!
@@ -124,78 +121,88 @@
 <hr>
 <footer class="container py-3 text-light">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5 py-3">
             <h3>X-brewing</h3>
             <p>
-                Beers with an X
+                KVK 72298138 <br>
+                BTW 133677515B01 <br>
+                IBAN NL38KNAB0257721819
             </p>
         </div>
-        <div class="col-md-3">
-            <h3>Our beers</h3>
-            <ul>
-                
-                    <li>
-                        <a href="/beers/coffee-in-the-morning.html" class="d-block py-1">Coffee In The Morning</a>
-                    </li>
-                
-                    <li>
-                        <a href="/beers/fruity-madness.html" class="d-block py-1">Fruity Madness</a>
-                    </li>
-                
-                    <li>
-                        <a href="/beers/two-big-friends.html" class="d-block py-1">Two big friends</a>
-                    </li>
-                
-            </ul>
+        <div class="col-md-3 py-3">
+            <h3 class="text-center">Our beers</h3>
+            
+            <div class="py-1">
+                <a href="/beers/coffee-in-the-morning.html" class="btn-block btn btn-outline-coffee-in-the-morning">
+                    Coffee In The Morning
+                </a>
+            </div>
+            
+            <div class="py-1">
+                <a href="/beers/fruity-madness.html" class="btn-block btn btn-outline-fruity-madness">
+                    Fruity Madness
+                </a>
+            </div>
+            
+            <div class="py-1">
+                <a href="/beers/two-big-friends.html" class="btn-block btn btn-outline-two-big-friends">
+                    Two big friends
+                </a>
+            </div>
+            
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4 py-3">
             <h3>Social</h3>
             
-                <div>
-                    <a href="https://www.facebook.com/X-brewing-169771763610772/" class="text-light btn">
-                        <i class="fab fa-fw fa-facebook"></i> facebook
-                    </a>
-                </div>
+            <div>
+                <a href="https://www.facebook.com/X-brewing-169771763610772/" class="text-light btn">
+                    <i class="fab fa-fw fa-facebook"></i> facebook
+                </a>
+            </div>
             
             
-                <div>
-                    <a href="https://untappd.com/Xbrewing" class="text-light btn">
-                        <i class="fab fa-fw fa-untappd"></i> untapped
-                    </a>
-                </div>
+            <div>
+                <a href="https://untappd.com/Xbrewing" class="text-light btn">
+                    <i class="fab fa-fw fa-untappd"></i> untapped
+                </a>
+            </div>
             
             
             
+            <hr>
+            <p>
+                Graphics by <a href="http://b71.nl/">b71</a>
+            </p>
         </div>
     </div>
 </footer>
 
 <div id="fb-root"></div>
 <script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-83598448-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+  ga('create', 'UA-83598448-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
 <script src="/build/runtime.js" async></script>
