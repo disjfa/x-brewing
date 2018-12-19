@@ -64,11 +64,11 @@ self.__precacheManifest = [
     "url": "/build/fonts/fa-brands-400.418d54a4.ttf"
   },
   {
-    "revision": "ff1630511afab22e1830",
+    "revision": "182c517c19560ffc5386",
     "url": "/build/app.js"
   },
   {
-    "revision": "ff1630511afab22e1830",
+    "revision": "182c517c19560ffc5386",
     "url": "/build/app.css"
   }
 ];
