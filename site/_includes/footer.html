@@ -28,12 +28,19 @@
                 </a>
             </div>
             {% endif %}
+            {% if site.instagram_url %}
+                <div>
+                    <a href="{{ site.untapped_url }}" class="text-light btn">
+                        <i class="fab fa-fw fa-instagram"></i> instagram
+                    </a>
+                </div>
+            {% endif %}
             {% if site.untapped_url %}
-            <div>
-                <a href="{{ site.untapped_url }}" class="text-light btn">
-                    <i class="fab fa-fw fa-untappd"></i> untapped
-                </a>
-            </div>
+                <div>
+                    <a href="{{ site.untapped_url }}" class="text-light btn">
+                        <i class="fab fa-fw fa-untappd"></i> untapped
+                    </a>
+                </div>
             {% endif %}
             {% if site.twitter_url %}
             <div>
