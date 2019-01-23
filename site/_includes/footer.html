@@ -30,7 +30,7 @@
             {% endif %}
             {% if site.instagram_url %}
                 <div>
-                    <a href="{{ site.untapped_url }}" class="text-light btn">
+                    <a href="{{ site.instagram_url }}" class="text-light btn">
                         <i class="fab fa-fw fa-instagram"></i> instagram
                     </a>
                 </div>
@@ -50,17 +50,19 @@
             </div>
             {% endif %}
             {% if site.github_url %}
-            <div>
-                <a href="{{ site.github_url }}" class="text-light btn">
-                    <i class="fab fa-fw fa-github"></i> github
-                </a>
-            </div>
+                <div>
+                    <a href="{{ site.github_url }}" class="text-light btn">
+                        <i class="fab fa-fw fa-github"></i> github
+                    </a>
+                </div>
             {% endif %}
-            <div>
-                <a href="mailto: info@x-brewing.com" class="text-light btn">
-                    <i class="fas fa-fw fa-envelope"></i> Email
-                </a>
-            </div>
+            {% if site.email %}
+                <div>
+                    <a href="mailto: {{ site.email }}" class="text-light btn">
+                        <i class="fas fa-fw fa-envelope"></i> email
+                    </a>
+                </div>
+            {% endif %}
             <hr>
             <p>
                 Graphics by <a href="http://b71.nl/">b71</a>

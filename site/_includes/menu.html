@@ -23,6 +23,13 @@
                         <i class="fab fa-fw fa-facebook"></i>
                     </a>
                 {% endif %}
+                {% if site.instagram_url %}
+                    <div>
+                        <a href="{{ site.instagram_url }}" class="text-light btn">
+                            <i class="fab fa-fw fa-instagram"></i>
+                        </a>
+                    </div>
+                {% endif %}
                 {% if site.untapped_url %}
                     <a href="{{ site.untapped_url }}" class="btn text-white">
                         <i class="fab fa-fw fa-untappd"></i>
@@ -38,6 +45,14 @@
                         <i class="fab fa-fw fa-github"></i>
                     </a>
                 {% endif %}
+                {% if site.email %}
+                    <div>
+                        <a href="mailto: {{ site.email }}" class="text-light btn">
+                            <i class="fas fa-fw fa-envelope"></i>
+                        </a>
+                    </div>
+                {% endif %}
+
             </div>
         </div>
     </div>
